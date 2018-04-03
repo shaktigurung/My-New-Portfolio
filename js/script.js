@@ -1,12 +1,29 @@
-//Preloader
+/*============================================
+|||||Preloader|||||
+=============================================*/
 $(window).on('load', function () {
     $('#status').fadeOut();
     $('#preloader').delay(350).fadeOut('slow');
 });
 
+/*============================================
+|||||Skills|||||
+=============================================*/
+
 $(function () {
 
     // jQuery
-    $('h1').hide(500).show(500);
+   // $('h1').hide(500).show(500);
+    
+    $("#skills").owlCarousel({
+        items:1,
+        autoplay:true,
+        smartSpeed:300,
+        loop:true,
+        autoplayHoverPause:true,
+        nav:true,
+        dots:false
+    
+    });
 
 });
