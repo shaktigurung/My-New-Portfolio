@@ -1,0 +1,335 @@
+/*
+====================================================
+||||||Shakti Gurung Custom Style Sheet |||||
+====================================================
+====================================================
+||||||Color Palette|||||
+====================================================
+orange:#B55E3A
+black:#000D0E
+grey:#464941
+white:#F3F3F1
+greywhite:#B5A992
+lightgreywhite:#B3AA99
+blue:#225470;//overlay color
+
+====================================================
+||||||Fonts |||||
+====================================================
+font-family: 'Pacifico', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Yantramanav', sans-serif;
+
+/*====================================================
+||||||HTML and Body |||||
+====================================================
+*/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    color: #000D0E;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /*font-family: 'Pacifico', cursive;*/
+    font-family: 'Dancing Script', cursive;
+}
+
+p {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+section {
+    background: #B5A992;
+    overflow: hidden;
+}
+
+/*====================================================
+||||||Preloader |||||
+====================================================
+*/
+
+#preloader {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#status {
+    background-image: url("../img/preloader/preloader.gif");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+
+/*====================================================
+||||||Home |||||
+====================================================*/
+
+#home {
+    background: none;
+    height: 100%;
+}
+
+#home-bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    background: url('../video/home.jpeg') no-repeat;
+    background-size: cover;
+}
+
+#home-overlay {
+    background-color: #225470;
+    opacity: 0.85;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#home-content {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#home-heading h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #B5A992;
+    font-size: 65px;
+    font-weight: 100;
+    margin: 0;
+    display: inline-block;
+}
+
+#home-heading h1 span {
+    color: #B55E3A;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#home-text p {
+    color: #B5A992;
+    font-size: 17px;
+    font-weight: 100;
+    margin: 8px 0 30px 0;
+}
+
+/*====================================================
+|||||Buttons|||||
+====================================================*/
+
+.btn-general {
+    font-family: 'Dancing Script', cursive;
+    border-radius: 28px;
+    text-transform: uppercase;
+    margin: 0 6px;
+    padding: 12px 46px 12px 46px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.btn-home {
+    color: #B5A992;
+    border: 1px solid #B5A992;
+}
+
+.btn-home:hover,
+.btn-home:focus {
+    color: #F3F3F1;
+    background-color: #B55E3A;
+    border: 1px solid #B55E3A;
+}
+
+/*====================================================
+|||||Arrow down|||||
+====================================================*/
+
+#arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    color: #B5A992;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: -16px;
+    z-index: 1;
+}
+
+#arrow-down:hover,
+#arrow-down:focus {
+    color: #B55E3A;
+}
+
+/*====================================================
+|||||Content box|||||
+====================================================*/
+
+.content-box-lg {
+    padding: 120px 0;
+}
+
+.content-box-md {
+    padding: 100px 0px;
+}
+
+/*====================================================
+|||||Vertical Headings|||||
+====================================================*/
+
+.vertical-heading h5 {
+    color: #F3F3F1;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    display: inline-block;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: relative;
+    top: 60px;
+    left: -40px;
+}
+
+.vertical-heading h2 {
+    margin: 0 0 0 15px;
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 45px;
+}
+
+.vertical-heading h2 strong {
+    /*text-transform: uppercase;*/
+    color: #B55E3A;
+    font-weight: bold;
+}
+
+/*====================================================
+|||||About 01|||||
+====================================================*/
+
+#about-right p:first-child {
+    margin-bottom: 30px;
+}
+
+#about-right p {
+    font-family: cursive;
+}
+
+#about-right p span {
+    color: #B55E3A;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#about-bottom {
+    margin-top: 60px;
+}
+
+#about-bottom img {
+    margin: 0 auto;
+    width: 1024px;
+    display: block;
+}
+
+/*====================================================
+|||||About 02|||||
+====================================================*/
+
+#about-02 {
+    background-color: #B3AA99;
+}
+
+.about-item {
+    background-color: #B5A992;
+    padding: 80px 30px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.about-item i {
+    font-size: 42px;
+    margin: 0;
+}
+
+.about-item h3 {
+    font-size: 24px margin-bottom: 10px;
+}
+
+.about-item hr {
+    width: 45px;
+    height: 3px;
+    background-color: #B55E3A;
+    margin: 0 auto;
+    border: none;
+}
+
+.about-item p {
+    margin-top: 20px;
+}
+
+/* Hover State*/
+
+.about-item:hover {
+    background-color: #B55E3A;
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p {
+    color: #B5A992;
+}
+
+.about-item:hover hr {
+    background-color: #B5A992;
+}
+
+.about-item:hover i {
+    transform: translateY(-20px);
+}
+
+/*Smooth Transition */
+
+.about-item,
+.about-item i,
+about-item hr {
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
