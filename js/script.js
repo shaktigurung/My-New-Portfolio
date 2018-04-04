@@ -16,9 +16,9 @@ $(function () {
    // $('h1').hide(500).show(500);
     
     $("#skills").owlCarousel({
-        items:1,
+        items:3,
         autoplay:true,
-        smartSpeed:300,
+        smartSpeed:100,
         loop:true,
         autoplayHoverPause:true,
         nav:true,

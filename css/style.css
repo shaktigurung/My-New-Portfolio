@@ -245,6 +245,9 @@ section {
 |||||About 01|||||
 ====================================================*/
 
+#about-left h5{
+     margin-left: 12px;
+}
 .about-right p:first-child {
     margin-bottom: 30px;
     
@@ -340,6 +343,13 @@ about-item hr {
 ||||| Skills|||||
 ====================================================*/
 
+
+#skills{
+   background-color: #B3AA99;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
 #skill-left .vertical-heading{
     min-height: 160px;
 }
@@ -377,7 +387,13 @@ about-item hr {
 .skill:hover .skill-overlay{
     opacity: 1;
 }
-
+#skills:hover {
+    background-color: #B55E3A;
+}
+#skills {
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
 
 
 /*====================================================
@@ -424,11 +440,11 @@ ul.social-list li:nth-child(3) a:hover{
 ====================================================*/
 .owl-theme .owl-nav {
     color:#B55E3A;
-    font-size: 40px;
+    font-size: 30px;
     background-color: none;
     margin: 0;
 }
 .owl-theme .owl-nav:hover{
     background: none;
-    color:#B55E3A;
+    color:#B5A992;
 }
