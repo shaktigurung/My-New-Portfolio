@@ -55,6 +55,9 @@ section {
     background: #B5A992;
     overflow: hidden;
 }
+.nopadding { padding: 0 ;}
+
+.nomargin { margin: 0 ;}
 
 /*====================================================
 ||||||Preloader |||||
@@ -167,8 +170,7 @@ section {
 }
 
 .logo{
-    position: absolute;
-    
+    position:absolute;
 }
 
 .logo img{
@@ -178,6 +180,7 @@ section {
 .logo h2{
    display: inline-block;
    position: relative;
+   color:#B55E3A;
    top:10px;
 }
 .menu{
@@ -191,11 +194,19 @@ section {
     font-family: 'Dancing Script', cursive;
     font-size: 20px;
     display: inline-block;
-    list-style: none;
-    
+    list-style: none;  
 }
 .menu ul li a{
     color: #B55E3A;
+}
+
+.navbar-expand-lg {
+    float: right;
+/*    color:#B55E3A;*/
+}
+
+.navbar-toggler-icon{
+       z-index: -1;
 }
 
 /*====================================================
@@ -280,7 +291,7 @@ section {
     margin: 0 0 0 15px;
     font-size: 42px;
     font-weight: 100;
-    line-height: 45px;
+    line-height: 50px;
 }
 
 .vertical-heading h2 strong {
@@ -377,6 +388,15 @@ section {
     transform: translateY(-20px);
 }
 
+#about-bottom img {
+    margin: 0 auto;
+    width: 1024px;
+    display: block;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1); 
+   
+}
 /*Smooth Transition */
 
 .about-item,
@@ -636,4 +656,124 @@ ul.social-list li:nth-child(3) a:hover{
 	        width: 90%;
 	    }
 	}
+
+/*====================================================
+|||||Portfolio|||||
+====================================================*/
+#portfolio img{
+    margin: 10px 0px 10px 0px;
+}
+.content-area{ 
+  padding-top: 4px;
+}
+.portfolio-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.portfolio-item h4 {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #B5A992;
+}
+.portfolio-item span{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.hover-bg {
+  position: absolute;
+  background-color: #225470;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.hover-txt {
+  padding: 30px 30px 40px 30px;
+  position: absolute;
+  bottom: 0;
+  color: #B5A992;
+  -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateY(-100px);
+      -moz-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+          -o-transform: translateY(-100px);
+            transform: translateY(-100px);
+}
+
+.portfolio-item:hover .hover-bg{
+  opacity: 0.9;
+}
+.portfolio-item:hover .hover-bg .hover-txt{
+  -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+          -o-transform: translateY(0);
+            transform: translateY(0);
+}
+/* Layout Two 
+====================*/
+/* Menu Style Two */
+.layout-two a.menu-toggle {
+    background-color: #ffffff;
+    color:#B5A992;
+}
+
+/* Index Style Two - Box Portfolio */
+.layout-two .portfolio-item{
+  margin: 0;
+}
+.layout-two .portfolio-item i{
+  font-size: 60px;
+}
+.layout-two .hover-txt{ 
+  text-align: center;
+  padding: 25% 0;
+  position: inherit;
+}
+.layout-two .hover-bg{ padding: 20px;}
+.border {
+    border: 4px solid #B5A992;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.layout-two .hover-txt,
+.layout-two .hover-txt h4,
+.layout-two .hover-txt span{
+  -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateY(-100px);
+      -moz-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+          -o-transform: translateY(-100px);
+            transform: translateY(-100px);
+}
+.layout-two .hover-txt:hover,
+.layout-two .hover-txt:hover h4,
+.layout-two .hover-txt:hover span{
+  -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+          -o-transform: translateY(0);
+            transform: translateY(0);
+}
 
