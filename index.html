@@ -41,38 +41,36 @@
    
     <!--Home-->
     <section id="home">
-        <a class="" href="#">
-                <div class="logo">
-                    <img src="img/preloader/Triangles.gif">
-                    <h2>Shakti Gurung</h2>
-                </div>
-        </a>
-        <nav class="navbar navbar-expand-lg">
-            <div class="menu">
-                <button class="navbar-toggler btn btn-info" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Skills</a>
-                        </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+
+        <div class="menubar">
+             <div class="logo">
+                 <img src="img/preloader/Triangles.gif">
+             </div>
+            <span class="open-slide">
+              <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                </svg>
+              </a>
+            </span>
+
+            <ul class="menubar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
 
         <!--Background Video-->
         <div class="fullscreen-video-wrap">
@@ -201,153 +199,22 @@
             <div class="row">
 
                 <!--Skill Left Side -->
-                <div class="col-md-6 ">
+                <div class="col-md-4 ">
                     <div id="skill-left">
                         <div class="vertical-heading">
                             <h5>What I Know </h5>
                             <h2> My <strong> Skill </strong><br>Proficiency</h2>
                         </div>
-
-                        <div class="about-right">
-                            <h2> " Working Experiences with HTML, CSS, JavaScript, PHP and JQuery. Familiar with Bootstrap framework and various Content Management System such as Wordpress and Drupal. GIT and GITHUB used as a Version Control system."<i class="far fa-comment-alt"></i> </h2>
-                        </div>
                     </div>
                 </div>
                 <!--Skill Right Side -->
-
-                <div class="col-md-6">
-                    <div id="skills" class="owl-carousel owl-theme">
-                        <!--Skill 01-->
-                        <div class="skill">
-                            <img src="img/skill/html.png" alt="html" class="img-fluid">
-                            <!--
-                                <div class="skill-overlay">
-                                    <div class="skill-info text-center">
-                                        <h6>HTML</h6>
-                                        <p>HyterText Markup Language</p>
-                                        <ul class="social-list">
-                                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
--->
-                        </div>
-
-                        <!--Skill 02-->
-                        <div class="skill">
-                            <img src="img/skill/css3.png" alt="css3" class="img-fluid">
-                            <!--
-                                <div class="skill-overlay">
-                                    <div class="skill-info text-center">
-                                        <h6>CSS</h6>
-                                        <p> Cascading Style Sheet</p>
-                                        <ul class="social-list">
-                                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
--->
-                        </div>
-                        <!--Skill 03-->
-                        <div class="skill">
-                            <img src="img/skill/javascript.png" alt="javasrcipt" class="img-fluid">
-                            <!--
-                                <div class="skill-overlay">
-                                    <div class="skill-info text-center">
-                                        <h6>JavaScript</h6>
-                                        <p> JavaScript</p>
-                                        <ul class="social-list">
-                                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
--->
-                        </div>
-
-                        <!--Skill 04-->
-                        <div class="skill">
-                            <img src="img/skill/jquery.png" alt="jquery" class="img-fluid">
-                            <!--
-                                <div class="skill-overlay">
-                                    <div class="skill-info text-center">
-                                        <h6>Jquery</h6>
-                                        <p> JavaScript library</p>
-                                        <ul class="social-list">
-                                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
--->
-                        </div>
-
-                        <!--Skill 05-->
-                        <div class="skill">
-                            <img src="img/skill/php.png" alt="php" class="img-fluid">
-                            <!--
-                                <div class="skill-overlay">
-                                    <div class="skill-info text-center">
-                                        <h6>PHP</h6>
-                                        <p>Hypertext Preprocessor</p>
-                                        <ul class="social-list">
-                                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
--->
-                        </div>
-
-                        <!--Skill 06-->
-                        <div class="skill">
-                            <img src="img/skill/bootstrap.png" alt="bootstrap" class="img-fluid">
-                            <!--
-                                <div class="skill-overlay">
-                                    <div class="skill-info text-center">
-                                        <h6>Bootstrap</h6>
-                                        <p>Front End Framework</p>
-                                        <ul class="social-list">
-                                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
--->
-                        </div>
-
-                        <!--Skill 07-->
-                        <div class="skill">
-                            <img src="img/skill/drupal.png" alt="drupal" class="img-fluid">
-                        </div>
-
-
-                        <!--Skill 08-->
-                        <div class="skill">
-                            <img src="img/skill/wordpress.png" alt="wordpress" class="img-fluid">
-                        </div>
-
-                        <!--Skill 09-->
-                        <div class="skill">
-                            <img src="img/skill/git.png" alt="git" class="img-fluid">
-                        </div>
-
-                        <!--Skill 10-->
-                        <div class="skill">
-                            <img src="img/skill/github.png" alt="github" class="img-fluid">
-                        </div>
+                <div class="col-md-8">
+                    <div class="about-right">
+                            <h2> " Working Experiences with HTML, CSS, JavaScript, PHP and JQuery. Familiar with Bootstrap framework and various Content Management System such as Wordpress and Drupal. GIT and GITHUB used as a Version Control system."<i class="far fa-comment-alt"></i> </h2>
                     </div>
-                    <!--End of Skills-->
                 </div>
             </div>
+           
             <!--Progress Skill bar-->
             <div class="row">
                    
@@ -562,15 +429,7 @@
     </div>
 </section>
    <!--Contact Ends-->
-<!--
-<section id="copyright">
-    <div class="container">
-        <div class="row">
-            <p class="copyright"><i class="fas fa-copyright"></i>shaktigurung2018 </p>
-        </div>
-    </div>
-</section>
--->
+   
     <!-- Jquery CDN-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
