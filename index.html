@@ -49,27 +49,29 @@
             <span class="open-slide">
               <a href="#" onclick="openSlideMenu()">
                 <svg width="30" height="30">
-                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
-                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
-                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                    <path d="M0,5 30,5" stroke="#B5A992" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#B5A992" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#B5A992" stroke-width="5"/>
                 </svg>
               </a>
             </span>
 
             <ul class="menubar-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#home">Home</a></li>
             </ul>
         </div>
 
         <div id="side-menu" class="side-nav">
             <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </div>
 
         <!--Background Video-->
@@ -95,7 +97,7 @@
                     <p>A Front End Web Developer based in Australia </p>
                 </div>
                 <div id="home-btn">
-                    <a class="btn btn-general btn-home" href="#hireme" title="Hire me" role="button">Hire me  <i class="far fa-smile"></i></a>
+                    <a class="btn btn-general btn-home" href="#contact" title="Hire me" role="button">Hire me<i class="far fa-smile"></i></a>
                 </div>
             </div>
         </div>
@@ -193,7 +195,7 @@
     <!--About Ends-->
     
     <!--Skills-->
-<section id="skill">
+<section id="skill" onmouseover="skillbar()">
     <div class="content-box-lg">
         <div class="container">
             <div class="row">
