@@ -24,6 +24,7 @@ function openSlideMenu(){
   sr.reveal('#home-heading-1',{duration:5000, origin:'top', distance:'180px'});
   sr.reveal('#home-heading-2',{duration:7000, origin:'bottom', distance:'180px'});
   sr.reveal('.vertical-heading',{duration:3000, origin:'top', distance:'180px'});
+  sr.reveal('.contact-title',{duration:4000, origin:'top', distance:'180px'});
 
 /*============================================
 |||||Skill Bar|||||
