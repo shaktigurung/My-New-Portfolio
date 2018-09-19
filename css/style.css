@@ -61,6 +61,8 @@ section {
 
 .nomargin { margin: 0 ;}
 
+
+  
 /*====================================================
 ||||||Preloader |||||
 ====================================================
@@ -87,6 +89,7 @@ section {
     margin-top: -100px;
     margin-left: -100px;
 }
+
 
 /*====================================================
 ||||||Home |||||
@@ -169,6 +172,8 @@ section {
     position:absolute;
     height:50px;
     width: 50px;
+    top: 5px;
+    left: 20px;
 } 
 .menubar a{
   float: right;
@@ -185,7 +190,12 @@ section {
   margin:8px 0 0 0;
   list-style:none;
 }
-
+.menubar-nav {
+    float: right;
+}
+.menubar-nav li{
+    display: inline-block;
+}
 .menubar a:hover{
   color:#B55E3A;
 }
@@ -212,7 +222,6 @@ section {
   display:block;
   transition:0.3s;
 }
-
 .side-nav a:hover{
   color:#B55E3A;
 }
