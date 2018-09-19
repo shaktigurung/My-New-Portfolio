@@ -709,7 +709,10 @@ about-item hr {
 
 	.cssColor {
 	    background: #0C73B8;
-	}
+    }
+    .sassColor{
+        background:#cf649a;
+    }
 
 	.jsColor {
 	    background: #E5BB31;
@@ -722,10 +725,12 @@ about-item hr {
 	.jqueryColor {
 	    background: #0669AD;
 	}
-.mysqlColor{
-    background: #f29111;
-}
-
+    .mysqlColor{
+        background: #f29111;
+    }
+    .rubyColor{
+        background: #841f19;
+    }
 	.bootstrapColor {
 	    background: #7745C8;
 	}
@@ -759,18 +764,22 @@ about-item hr {
 
 	.js {
 	    background: #E5BB31;
-	}
-
+    }
+    .sass{
+        background:#cf649a;
+    }
 	.php {
 	    background: #767BB3;
 	}
-
 	.jquery {
 	    background: #0669AD;
 	}
-.mysql {
-    background: #00758f;
-}
+    .mysql {
+        background: #f29111;
+    }
+    .ruby{
+        background: #841f19;
+    }
 	.bootstrap {
 	    background: #7745C8;
 	}
