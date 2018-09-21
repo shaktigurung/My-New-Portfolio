@@ -458,7 +458,7 @@ about-item hr {
     z-index: 2;
     background: #000;
 }
-.card:hover .img-box{
+.card .img-box{
     transform: translateY(-150px);
 }
 .img-box img{
@@ -1083,19 +1083,6 @@ ul.social li:nth-child(5) a:hover{
   }
   @media(min-width:568px){
     .open-slide{display:none}
-    .img-box img{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 50%;
-        transition:0.5s;
-        z-index: 2;
-        background: #000;
-    }
-    .card:hover .img-box{
-        transform: translateY(-160px);
-    }
   }
   @media(min-width:768px){
     .img-box img{
@@ -1107,6 +1094,9 @@ ul.social li:nth-child(5) a:hover{
         transition:0.5s;
         z-index: 2;
         background: #000;
+    }
+    .card .img-box{
+        transform: none;
     }
     .card:hover .img-box{
         transform: translateY(-160px);
