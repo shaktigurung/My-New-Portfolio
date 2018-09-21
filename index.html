@@ -34,7 +34,7 @@
     <div id="preloader">
         <div id="status">&nbsp;</div>
     </div>
-   
+  
     <!--Home-->
     <section id="home">
 
@@ -69,13 +69,17 @@
             <a href="#contact">Contact</a>
         </div>
 
-        <!--Background Video-->
-        <div class="fullscreen-video-wrap">
-            <video id="home-bg-video" poster="video/home.jpeg" autoplay loop muted>
-            <source src="video/home.mov" type="video/mov">
-            <source src="video/home.mp4" type="video/mp4">
-        </video>
-        </div>
+        
+        <!--Particles-->
+        <div id="particles-js">
+            <!--Background Video-->
+            <div class="fullscreen-video-wrap">  
+                <video id="home-bg-video" poster="video/home.jpeg" autoplay loop muted>
+                <source src="video/home.mov" type="video/mov">
+                <source src="video/home.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div><!--Particles End-->
 
         <!--Overlay-->
         <div id="home-overlay"></div>
@@ -86,7 +90,7 @@
             <div id="home-content-inner" class="text-center">
                 <div class="headingborder">
                     <div id="home-heading">
-                        <h1 id="home-heading-1">I 'm</h1><br>
+                        <h1 id="home-heading-1">Hello! I 'm</h1><br>
                         <h1 id="home-heading-2"> Shakti <span>Gurung</span></h1>
                     </div>
                     <div id="home-text">
@@ -100,13 +104,13 @@
         </div>
 
         <!--Arrow Down-->
-
         <a href="#about" id="arrow-down">
             <i class="fa fa-angle-down"></i>
         </a>
 
     </section>
     <!--Home Ends-->
+   
     <!--About-->
     <section id="about" onmouseover="textanimation()">
 
@@ -213,7 +217,9 @@
             </div>
         </div>
         <!--About 02 Ends-->
+      
     </section>
+
     <!--About Ends--> 
     <!--Skills-->
     <section id="skill" onmouseover="skillbar()">
@@ -608,6 +614,8 @@
     
      <!-- ScrollReveal JavaScript-->
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+     <!--Particlesjs-->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
    
     <!--Custom JavaScript-->
     <script src="js/script.js"></script>

@@ -6,6 +6,13 @@ $(window).on('load', function () {
     $('#status').fadeOut();
     $('#preloader').delay(350).fadeOut('slow');
 });
+
+/*============================================
+|||||Particle.js|||||
+=============================================*/
+particlesJS.load('particles-js', '/json/particles.json', function(){
+    console.log('particles.json loaded...');
+  });
 /*============================================
 |||||Navigation|||||
 =============================================*/

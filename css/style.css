@@ -112,6 +112,9 @@ section {
     background: url('../video/home.jpeg') no-repeat;
     background-size: cover;
 }
+#particles-js{
+    z-index: 1;
+}
 
 #home-overlay {
     background-color: #225470;
@@ -125,9 +128,14 @@ section {
 }
 
 #home-content {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
     display: table;
+    z-index:-1;
 }
 
 #home-content-inner {
@@ -156,7 +164,6 @@ section {
     font-weight: 100;
     margin: 8px 0 30px 0;
 }
-
 /*====================================================
 ||||| Logo and Menu|||||
 ====================================================*/
@@ -248,6 +255,7 @@ section {
     padding: 12px 46px 12px 46px;
     -webkit-transition: all .5s;
     transition: all .5s;
+    z-index:1;
 }
 .btn-home {
     color: #B5A992;
@@ -259,7 +267,9 @@ section {
     background-color: #B55E3A;
     border: 1px solid #B55E3A;
 }
-
+/* #home-btn{
+    z-index:2;
+} */
 /*====================================================
 |||||Arrow down|||||
 ====================================================*/
