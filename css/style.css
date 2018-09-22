@@ -32,8 +32,7 @@ body {
 
 body {
     color: #000D0E;
-    background-color:#B5A992;
-   
+    background-color:#B5A992; 
 }
 
 h1,
@@ -60,13 +59,9 @@ section {
 
 .nomargin { margin: 0 ;}
 
-
-  
 /*====================================================
 ||||||Preloader |||||
-====================================================
-*/
-
+====================================================*/
 #preloader {
     background-color: #fff;
     position: fixed;
@@ -89,11 +84,9 @@ section {
     margin-left: -100px;
 }
 
-
 /*====================================================
 ||||||Home |||||
 ====================================================*/
-
 #home {
     background: none;
     height: 100%;
@@ -206,8 +199,7 @@ section {
     display: inline-block;
 }
 .menubar a:hover{
-  color:#B55E3A; */
-  /* border-bottom: 3px solid #B55E3A; */
+  color:#B55E3A; 
   -webkit-transition: all .5s;
   transition: all .5s;
 }
@@ -236,7 +228,6 @@ section {
 .side-nav a:hover{
   color:#B55E3A;
 }
-
 .side-nav .btn-close{
   position:absolute;
   top:0;
@@ -244,11 +235,9 @@ section {
   font-size:36px;
   margin-left:50px;
 }
-
 /*====================================================
 |||||Buttons|||||
 ====================================================*/
-
 .btn-general {
     font-family: 'Dancing Script', cursive;
     border-radius: 28px;
@@ -275,7 +264,6 @@ section {
 /*====================================================
 |||||Arrow down|||||
 ====================================================*/
-
 #arrow-down {
     position: absolute;
     left: 50%;
@@ -292,19 +280,15 @@ section {
 #arrow-down:focus {
     color: #B55E3A;
 }
-
 /*====================================================
 |||||Content box|||||
 ====================================================*/
-
 .content-box-lg {
     padding: 120px 0;
 }
-
 .content-box-md {
     padding: 100px 0px;
 }
-
 /*====================================================
 |||||Vertical Headings|||||
 ====================================================*/
@@ -323,9 +307,7 @@ section {
     position: relative;
     top: 60px;
     left: -53px;
-/*    animation: textanimation 3s ease-in-out 3s ;*/
 }
-
 .vertical-heading h2 {
     margin: 0 0 0 15px;
     font-size: 42px;
@@ -336,12 +318,6 @@ section {
     color: #B55E3A;
     font-weight: bold;
 }
-/*
-@-webkit-keyframes textanimation {
-    from {left: -150px;}
-    to {left: 0;}
-}
-*/
 /*====================================================
 |||||About 01|||||
 ====================================================*/
@@ -373,11 +349,9 @@ section {
     width: 1024px;
     display: block;
 }
-
 /*====================================================
 |||||About 02|||||
 ====================================================*/
-
 #about-02 {
     background-color: #B3AA99;
 }
@@ -406,7 +380,6 @@ section {
     font-size: 1rem;
 }
 /* Hover State*/
-
 .about-item:hover {
     background-color: #B55E3A;
 }
@@ -649,8 +622,7 @@ about-item hr {
 }
 /*====================================================
 ||||| Skill Progress bar|||||
-====================================================*/
-	
+====================================================*/	
 .skillbar {
     background-color: #B5A992;
     margin: 10px 0px;
@@ -761,8 +733,6 @@ about-item hr {
 	.githubColor {
 	    background: #161614;
 	}
-
-
 	/**** Bar Colors****/
 
 	.html {
@@ -809,12 +779,6 @@ about-item hr {
 
 	.github {
 	    background: #161614;
-	}
-
-	@media (max-width: 1024px) {
-	    .main {
-	        width: 90%;
-	    }
 	}
 
 /*====================================================
@@ -1093,6 +1057,11 @@ ul.social li:nth-child(5) a:hover{
 /*====================================================
 |||||Media Queries|||||
 ====================================================*/
+@media (max-width: 1024px) {
+    .main {
+        width: 90%;
+    }
+}
 @media(max-width:568px){
     .menubar-nav{display:none}
   }
