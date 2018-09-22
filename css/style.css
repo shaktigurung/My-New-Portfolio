@@ -112,9 +112,6 @@ section {
     background: url('../video/home.jpeg') no-repeat;
     background-size: cover;
 }
-#particles-js{
-    z-index: 1;
-}
 
 #home-overlay {
     background-color: #225470;
@@ -124,7 +121,7 @@ section {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index:-1;
 }
 
 #home-content {
@@ -135,7 +132,7 @@ section {
     width: 100%;
     height: 100%;
     display: table;
-    z-index:-1;
+    z-index:1;
 }
 
 #home-content-inner {
@@ -173,6 +170,7 @@ section {
   position:relative;
   overflow: hidden;
   height:63px; 
+  z-index:99;
 }
 .logo img{
     position:absolute;
@@ -182,7 +180,9 @@ section {
     left: 20px;
 } 
 .logo:hover img{
-    border: 2px dotted #B5A992;
+    border: 4px solid #B5A992;
+    -webkit-transition: all .5s;
+    transition: all .5s;
 }
 .menubar a{
   float: right;
@@ -206,14 +206,16 @@ section {
     display: inline-block;
 }
 .menubar a:hover{
-  color:#B55E3A;
+  color:#B55E3A; */
+  /* border-bottom: 3px solid #B55E3A; */
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
-
 .side-nav{
   height:100%;
   width:0;
   position:fixed;
-  z-index:1;
+  z-index:99;
   top:0;
   left:0;
   background-color:#111;
@@ -267,9 +269,9 @@ section {
     background-color: #B55E3A;
     border: 1px solid #B55E3A;
 }
-/* #home-btn{
+#home-btn{
     z-index:2;
-} */
+}
 /*====================================================
 |||||Arrow down|||||
 ====================================================*/
