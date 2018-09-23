@@ -8,6 +8,18 @@ $(window).on('load', function () {
 });
 
 /*============================================
+|||||Typejs|||||
+=============================================*/
+var options = {
+    strings: [ "A Front End Web Developer based in Sydney, Australia ", " I am an enthusiastic Front End Web Developer learning to be a Full Stack Developer.", " Please scroll below to know more about me. Thank you "],
+    typeSpeed:40, 
+    backSpeed:40,
+    startDelay: 6000,
+    backDelay:500,
+  }
+  var typed = new Typed(".typing", options);
+
+/*============================================
 |||||Navigation|||||
 =============================================*/
 function openSlideMenu(){
