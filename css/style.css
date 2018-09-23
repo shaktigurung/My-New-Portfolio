@@ -259,6 +259,9 @@ section {
     background-color: #B55E3A;
     border: 1px solid #B55E3A;
 }
+.btn-home i{
+    margin-left:5px;
+}
 #home-btn{
     z-index:2;
 }
