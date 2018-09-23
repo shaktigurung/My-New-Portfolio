@@ -262,9 +262,6 @@ section {
 .btn-home i{
     margin-left:5px;
 }
-#home-btn{
-    z-index:2;
-}
 /*====================================================
 |||||Arrow down|||||
 ====================================================*/
@@ -915,7 +912,7 @@ about-item hr {
 #contact h2{
    margin-top: 20px;
    text-align: center;
-   font-size: 40px;
+   font-size: 2rem;
 }
 #contact p{
     text-align: center;
@@ -973,10 +970,15 @@ textarea{
     font-size: 1rem;
 }
 .successbutton{
+    font-family: 'Dancing Script', cursive;
+    border-radius: 28px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    z-index:1;
     width:200px;
-    height: 200px;
+    height: 100px;
     justify-content: center;
-    background:#B55E3A;
+    background:#225470;
     color:#B3AA99;
     border: none;
     outline:none;
@@ -993,6 +995,13 @@ button{
     list-style: none;
     text-decoration: none;    
 }
+.successbutton:hover,
+.successbutton:focus {
+    color: #F3F3F1;
+    background-color: #B55E3A;
+    border: 1px solid #B55E3A;
+}
+
 
 /*====================================================
 |||||Copyright|||||
