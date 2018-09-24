@@ -181,6 +181,24 @@ section {
     -webkit-transition: all .5s;
     transition: all .5s;
 }
+.logo h1{
+    color:#B5A992;
+}
+.logo h1 span{
+    color:#B55E3A; 
+}
+.logo:hover h1{
+     color: #B55E3A;
+     border-bottom: 3px solid #B55E3A;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+.logo:hover h1 span{
+    color: #B5A992;
+   -webkit-transition: all .5s;
+   transition: all .5s;
+}
+
 .menubar a{
   /* float: right; */
   display: block;
