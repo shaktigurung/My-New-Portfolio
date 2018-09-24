@@ -33,7 +33,7 @@ function openSlideMenu(){
 |||||Scroll Reveal Animation|||||
 =============================================*/
   window.sr = ScrollReveal();
-  sr.reveal('.menubar',{duration:6000, origin:'bottom', distance:'100px'});
+//   sr.reveal('.menubar',{duration:6000, origin:'bottom', distance:'100px'});
   sr.reveal('#home-heading-1',{duration:5000, origin:'top', distance:'180px'});
   sr.reveal('#home-heading-2',{duration:7000, origin:'bottom', distance:'180px'});
   sr.reveal('.vertical-heading',{duration:3000, origin:'top', distance:'180px'});

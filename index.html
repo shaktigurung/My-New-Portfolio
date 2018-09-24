@@ -34,32 +34,27 @@
     <div id="preloader">
         <div id="status">&nbsp;</div>
     </div>
-  
-    <!--Home-->
-    <section id="home">
-
-        <div class="menubar">
-             <div class="logo">
-                  <a href="#home"><img src="img/logo/sglogo.jpg" alt=""></a> 
-             </div>
-            <span class="open-slide">
-              <a href="#" onclick="openSlideMenu()">
-                <svg width="30" height="30">
-                    <path d="M0,5 30,5" stroke="#B5A992" stroke-width="5"/>
-                    <path d="M0,14 30,14" stroke="#B5A992" stroke-width="5"/>
-                    <path d="M0,23 30,23" stroke="#B5A992" stroke-width="5"/>
-                </svg>
-              </a>
-            </span>
-            <ul class="menubar-nav">
-                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#about"><i class="fas fa-info"></i> About</a></li>
-                <li><a href="#skill"><i class="fas fa-trophy"></i> Skills</a></li>
-                <li><a href="#portfolio"><i class="fas fa-archive"></i> Portfolio</a></li>
-                <li><a href="#contact"><i class="far fa-address-book"></i> Contact</a></li>   
-            </ul>
+   <!--Navigation-->
+    <nav class="menubar navbar sticky-top">
+        <div class="logo">
+            <a href="#home"><img src="img/logo/sglogo.jpg" alt=""></a> 
         </div>
-
+        <ul class="menubar-nav">
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-info"></i> About</a></li>
+            <li><a href="#skill"><i class="fas fa-trophy"></i> Skills</a></li>
+            <li><a href="#portfolio"><i class="fas fa-archive"></i> Portfolio</a></li>
+            <li><a href="#contact"><i class="far fa-address-book"></i> Contact</a></li>   
+        </ul>
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#B5A992" stroke-width="5"/>
+                <path d="M0,14 30,14" stroke="#B5A992" stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="#B5A992" stroke-width="5"/>
+            </svg>
+            </a>
+        </span>
         <div id="side-menu" class="side-nav">
             <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
             <a href="#home"><i class="fas fa-home"></i> Home</a>
@@ -68,14 +63,17 @@
             <a href="#portfolio"><i class="fas fa-archive"></i> Portfolio</a>
             <a href="#contact"><i class="far fa-address-book"></i> Contact</a>
         </div>
-
-            <!--Background Video-->
-            <div class="fullscreen-video-wrap">  
+    </nav>
+     <!--Navigation Ends-->
+    <!--Home-->
+    <section id="home">
+        <!--Background Video-->
+        <div class="fullscreen-video-wrap">  
                 <video id="home-bg-video" poster="video/home.jpeg" autoplay loop muted>
                 <source src="video/home.mov" type="video/mov">
                 <source src="video/home.mp4" type="video/mp4">
                 </video>
-            </div>
+        </div>
         
         <!--Overlay-->
         <div id="home-overlay"></div>
