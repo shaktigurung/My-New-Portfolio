@@ -160,13 +160,16 @@ section {
 
 .menubar{
   background-color:#225470;
-  position:relative;
+  /* position:relative; */
+  width:100%;
+  position: fixed;
   overflow: hidden;
   height:63px; 
   z-index:99;
 }
 .logo img{
-    position:absolute;
+    /* position:absolute; */
+    position: fixed;
     height:50px;
     width: 50px;
     top: 5px;
@@ -179,7 +182,7 @@ section {
     transition: all .5s;
 }
 .menubar a{
-  float: right;
+  /* float: right; */
   display: block;
   color:#B5A992;
   text-align:center;
