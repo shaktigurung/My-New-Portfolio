@@ -185,9 +185,8 @@ section {
 
 .menubar-nav {
   float: right; }
-
-.menubar-nav li {
-  display: inline-block; }
+  .menubar-nav li {
+    display: inline-block; }
 
 .menubar a:hover {
   color: #B55E3A;
@@ -206,24 +205,21 @@ section {
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s; }
-
-.side-nav a {
-  padding: 10px 10px 10px 30px;
-  text-decoration: none;
-  font-size: 22px;
-  color: #B5A992;
-  display: block;
-  transition: 0.3s; }
-
-.side-nav a:hover {
-  color: #B55E3A; }
-
-.side-nav .btn-close {
-  position: absolute;
-  top: 0;
-  right: 22px;
-  font-size: 36px;
-  margin-left: 50px; }
+  .side-nav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #B5A992;
+    display: block;
+    transition: 0.3s; }
+  .side-nav a:hover {
+    color: #B55E3A; }
+  .side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px; }
 
 /*====================================================
 |||||Buttons|||||
