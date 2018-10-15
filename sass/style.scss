@@ -275,6 +275,9 @@ section {
   .btn-home {
       color: $greywhite;
       border: 1px solid $greywhite;
+      i{
+        margin-left:5px;
+     }
   }
   .btn-home:hover,
   .btn-home:focus {
@@ -282,9 +285,7 @@ section {
       background-color: $orange;
       border: 1px solid $orange;
   }
-  .btn-home i{
-      margin-left:5px;
-  }
+ 
   /*====================================================
   |||||Arrow down|||||
   ====================================================*/
@@ -337,10 +338,10 @@ section {
       font-size: 42px;
       font-weight: 100;
       line-height: 50px;
-  }
-  .vertical-heading h2 strong {
-      color: $orange;
-      font-weight: bold;
+      strong {
+        color: $orange;
+        font-weight: bold;
+     }
   }
   /*====================================================
   |||||About 01|||||
@@ -367,11 +368,11 @@ section {
   }
   #about-bottom {
       margin-top: 60px;
-  }
-  #about-bottom img {
-      margin: 0 auto;
-      width: 1024px;
-      display: block;
+      img {
+        margin: 0 auto;
+        width: 1024px;
+        display: block;
+     }
   }
   /*====================================================
   |||||About 02|||||
@@ -384,45 +385,41 @@ section {
       padding: 80px 30px;
       -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .1);
       box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-  }
-  .about-item i {
-      font-size: 42px;
-      margin: 0;
-  }
-  .about-item h3 {
-      font-size: 24px;
-      margin-bottom: 10px;
-  }
-  .about-item hr {
-      width: 45px;
-      height: 3px;
-      background-color: $orange;
-      margin: 0 auto;
-      border: none;
-  }
-  .about-item p {
-      margin-top: 20px;
-      font-size: 1rem;
-  }
+      i {
+        font-size: 42px;
+        margin: 0;
+     }
+     h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    hr {
+        width: 45px;
+        height: 3px;
+        background-color: $orange;
+        margin: 0 auto;
+        border: none;
+    }
+    p {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+  } 
   /* Hover State*/
   .about-item:hover {
       background-color: $orange;
-  }
-  
-  .about-item:hover i,
+      i,
   .about-item:hover h3,
   .about-item:hover p {
       color: $greywhite;
+    }
+    hr {
+        background-color: $greywhite;
+    }
+    i {
+        transform: translateY(-20px);
+    }
   }
-  
-  .about-item:hover hr {
-      background-color: $greywhite;
-  }
-  
-  .about-item:hover i {
-      transform: translateY(-20px);
-  }
-  
   #about-bottom img {
       margin: 0 auto;
       width: 1024px;
@@ -433,7 +430,6 @@ section {
      
   }
   /*Smooth Transition */
-  
   .about-item,
   .about-item i,
   about-item hr {
@@ -445,21 +441,24 @@ section {
   ====================================================*/
   .box1{
       margin-top: 20px;
-  }
-  .box1 h3{
-      text-align: center;
-      text-transform: capitalize;
-      font-family: $font-family_Noto;
-  }
-  .box1 p{
-      font-family: $font-family_Noto;
-      text-align: justify;
+      h3{
+        text-align: center;
+        text-transform: capitalize;
+        font-family: $font-family_Noto;
+     }
+     p{
+        font-family: $font-family_Noto;
+        text-align: justify;
+    }
   }
   .card{
     width:100%;
     height:467px;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    .img-box{
+        transform: translateY(-150px);
+    }
   }
   .img-box{
       position: absolute;
@@ -470,13 +469,10 @@ section {
       transition:0.5s;
       z-index: 2;
       background: $black;
-  }
-  .card .img-box{
-      transform: translateY(-150px);
-  }
-  .img-box img{
-      width: 100%;
-      transition: 0.5s;  
+      img{
+        width: 100%;
+        transition: 0.5s;  
+     }
   }
   .social-icon{
       position: absolute;
@@ -487,36 +483,41 @@ section {
       display:flex;
       margin: 0;
       padding:0;
-  }
-  .social-icon li{
-      list-style: none;
-  }
-  .social-icon li a{
-      color:$black;
-      width: 40px;
-      height: 40px;
-      background: $lightgreywhite;
-      margin: 0 5px;
-      text-align: center;
-      font-size: 30px;
-      display: block;
-      border-radius: 50%;
-      position:relative;
-      overflow: hidden;
-      border: 3px solid $lightgreywhite;
-      transition: 0.5s;
-      transform:translateY(250px);
-      opacity: 0;
+      li{
+        list-style: none;
+        a{
+            color:$black;
+            width: 40px;
+            height: 40px;
+            background: $lightgreywhite;
+            margin: 0 5px;
+            text-align: center;
+            font-size: 30px;
+            display: block;
+            border-radius: 50%;
+            position:relative;
+            overflow: hidden;
+            border: 3px solid $lightgreywhite;
+            transition: 0.5s;
+            transform:translateY(250px);
+            opacity: 0;
+        }
+      }
   }
   .card:hover .social-icon li a{
       transform:translateY(0px);
       opacity: 1;
+      .fa{
+        transition:0.5s;
+        font-size:24px;
+        line-height: 50px;
+    }
   }
-  .card .social-icon li a .fa{
-      transition:0.5s;
-      font-size:24px;
-      line-height: 50px;
-  }
+//   .card .social-icon li a .fa{
+//       transition:0.5s;
+//       font-size:24px;
+//       line-height: 50px;
+//   }
   .card .social-icon li a:hover .fa{
       transform: rotateY(360deg);
       opacity: 1;
