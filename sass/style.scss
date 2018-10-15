@@ -144,14 +144,12 @@ section {
     font-weight: 100;
     margin: 0;
     display: inline-block;
+    span {
+        color: $orange;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
 }
-
-#home-heading h1 span {
-    color: $orange;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
 #home-text p {
     color: $greywhite;
     font-size: 17px;
@@ -187,22 +185,21 @@ section {
   }
   .logo h1{
       color:$greywhite;
-  }
-  .logo h1 span{
-      color:$orange; 
+      span{
+        color:$orange; 
+     }
   }
   .logo:hover h1{
        color: $orange;
        border-bottom: 3px solid $orange;
       -webkit-transition: all .5s;
       transition: all .5s;
+      span{
+        color: $greywhite;
+       -webkit-transition: all .5s;
+       transition: all .5s;
+     }
   }
-  .logo:hover h1 span{
-      color: $greywhite;
-     -webkit-transition: all .5s;
-     transition: all .5s;
-  }
-  
   .menubar a{
     /* float: right; */
     display: block;
