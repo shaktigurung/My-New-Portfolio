@@ -1,0 +1,38 @@
+/*====================================================
+  |||||Media Queries|||||
+  ====================================================*/
+  @media (max-width: 1024px) {
+    .main {
+        width: 90%;
+    }
+}
+@media(max-width:568px){
+    .menubar-nav{display:none}
+  }
+  @media(min-width:568px){
+    .open-slide{display:none}
+  }
+  @media(min-width:768px){
+    .img-box img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @include transition(0.5s);
+        z-index: 2;
+        background: $black;
+    }
+    .card .img-box{
+        transform: none;
+    }
+    .card:hover .img-box{
+        transform: translateY(-160px);
+    }
+    
+  }
+  @media(min-width:382px){
+      .card{
+          margin-top:160px;
+      }
+  }

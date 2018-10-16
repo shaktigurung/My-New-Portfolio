@@ -1,0 +1,45 @@
+/*====================================================
+  |||||Buttons|||||
+  ====================================================*/
+  .btn-general {
+    font-family: $font-family_Dancing;
+    border-radius: 28px;
+    text-transform: uppercase;
+    margin: 0 6px;
+    padding: 12px 46px 12px 46px;
+    @include transition(0.5s);
+    z-index:1;
+}
+.btn-home {
+    color: $greywhite;
+    border: 1px solid $greywhite;
+    i{
+      margin-left:5px;
+   }
+}
+.btn-home:hover,
+.btn-home:focus {
+    color: $white;
+    background-color: $orange;
+    border: 1px solid $orange;
+}
+
+/*====================================================
+|||||Arrow down|||||
+====================================================*/
+#arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    color: $greywhite;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: -16px;
+    z-index: 1;
+}
+#arrow-down:hover,
+#arrow-down:focus {
+    color: $orange;
+}
