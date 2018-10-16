@@ -583,6 +583,8 @@ about-item hr {
 .main {
   margin: 50px auto;
   width: 90%; }
+  .main i {
+    font-size: 1rem; }
 
 .progressBar {
   position: relative;
@@ -593,9 +595,6 @@ about-item hr {
   border-radius: 5px;
   box-shadow: 0 1px 2px #222;
   z-index: 1; }
-
-.main i {
-  font-size: 1rem; }
 
 .title {
   position: absolute;
@@ -722,18 +721,16 @@ about-item hr {
   overflow: hidden;
   display: block;
   margin-bottom: 30px; }
-
-.portfolio-item h4 {
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 18px;
-  letter-spacing: 1px;
-  color: #B5A992; }
-
-.portfolio-item span {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 100; }
+  .portfolio-item h4 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #B5A992; }
+  .portfolio-item span {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100; }
 
 .hover-bg {
   position: absolute;
@@ -765,13 +762,12 @@ about-item hr {
 
 .portfolio-item:hover .hover-bg {
   opacity: 0.9; }
-
-.portfolio-item:hover .hover-bg .hover-txt {
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -o-transform: translateY(0);
-  transform: translateY(0); }
+  .portfolio-item:hover .hover-bg .hover-txt {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); }
 
 /* Layout
 ====================*/
@@ -783,9 +779,8 @@ about-item hr {
 /* Index Style - Box Portfolio */
 .layout .portfolio-item {
   margin: 0; }
-
-.layout .portfolio-item i {
-  font-size: 60px; }
+  .layout .portfolio-item i {
+    font-size: 60px; }
 
 .layout .hover-txt {
   text-align: center;
@@ -829,26 +824,23 @@ about-item hr {
 #contact {
   background-color: #B3AA99;
   padding: 50px 0px 10px 0px; }
-
-#contact h2 {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 2rem; }
-
-#contact p {
-  text-align: center;
-  font-size: 1.5rem;
-  font-family: "Noto Serif", serif; }
-
-#contact h2 strong {
-  color: #B55E3A;
-  font-weight: bold; }
+  #contact h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2rem; }
+    #contact h2 strong {
+      color: #B55E3A;
+      font-weight: bold; }
+  #contact p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Noto Serif", serif; }
 
 .formBox {
   margin-top: 0px;
   padding: 50px; }
 
-inputBox {
+.inputBox {
   position: relative;
   box-sizing: border-box;
   margin-bottom: 40px; }
@@ -931,26 +923,24 @@ ul.social {
   padding: 0 0 10px 0;
   margin-top: 10px;
   text-align: center; }
-
-ul.social li {
-  display: inline-block;
-  list-style: none;
-  padding: 0.1rem;
-  margin: 0 0.2rem; }
-
-ul.social li a {
-  color: #000D0E;
-  width: 40px;
-  height: 40px;
-  background: #B3AA99;
-  text-align: center;
-  line-height: 40px;
-  font-size: 30px;
-  display: block;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  border: 3px solid #B3AA99; }
+  ul.social li {
+    display: inline-block;
+    list-style: none;
+    padding: 0.1rem;
+    margin: 0 0.2rem; }
+    ul.social li a {
+      color: #000D0E;
+      width: 40px;
+      height: 40px;
+      background: #B3AA99;
+      text-align: center;
+      line-height: 40px;
+      font-size: 30px;
+      display: block;
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+      border: 3px solid #B3AA99; }
 
 ul li a .fa {
   position: relative;

@@ -652,7 +652,10 @@ section {
   .main {
           margin: 50px auto;
           width: 90%;
-      }
+          i{
+            font-size: 1rem;
+        }
+ }
   
   .progressBar {
           position: relative;
@@ -664,9 +667,6 @@ section {
           box-shadow: 0 1px 2px #222;
           z-index: 1;
       }
-  .main i{
-      font-size: 1rem;
-  }
   
       .title {
           position: absolute;
@@ -812,19 +812,18 @@ section {
     overflow: hidden;
     display: block;
     margin-bottom: 30px;
-  }
-  
-  .portfolio-item h4 {
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: $greywhite;
-  }
-  .portfolio-item span{
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 100;
+    h4 {
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: $greywhite;
+      }
+    span{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 100;
+      }
   }
   .hover-bg {
     position: absolute;
@@ -837,7 +836,7 @@ section {
      -o-transition: all 0.5s;
     transition: all 0.5s;
   }
-  
+
   .hover-txt {
     padding: 30px 30px 40px 30px;
     position: absolute;
@@ -858,13 +857,13 @@ section {
   
   .portfolio-item:hover .hover-bg{
     opacity: 0.9;
-  }
-  .portfolio-item:hover .hover-bg .hover-txt{
-    -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-          -ms-transform: translateY(0);
-            -o-transform: translateY(0);
-              transform: translateY(0);
+    .hover-txt{
+        -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+              -ms-transform: translateY(0);
+                -o-transform: translateY(0);
+                  transform: translateY(0);
+    }
   }
   /* Layout
   ====================*/
@@ -873,20 +872,21 @@ section {
       background-color: $white;
       color:$greywhite;
   }
-  
   /* Index Style - Box Portfolio */
   .layout .portfolio-item{
     margin: 0;
-  }
-  .layout .portfolio-item i{
-    font-size: 60px;
+    i{
+        font-size: 60px;
+    }
   }
   .layout .hover-txt{ 
     text-align: center;
     padding: 25% 0;
     position: inherit;
   }
-  .layout .hover-bg{ padding: 20px;}
+  .layout .hover-bg{ 
+      padding: 20px;
+    }
   .border {
       border: 4px solid $greywhite;
       display: block;
@@ -922,26 +922,27 @@ section {
   #contact{
         background-color: $lightgreywhite;
         padding: 50px 0px 10px 0px;
+        h2{
+            margin-top: 20px;
+            text-align: center;
+            font-size: 2rem;
+            strong{
+                color: $orange;
+                font-weight: bold;
+            }
+         }
+         p{
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: $font-family_Noto;
+        }
   }
-  #contact h2{
-     margin-top: 20px;
-     text-align: center;
-     font-size: 2rem;
-  }
-  #contact p{
-      text-align: center;
-      font-size: 1.5rem;
-      font-family: $font-family_Noto;
-  }
-  #contact h2 strong{
-      color: $orange;
-      font-weight: bold;
-  }
+  
   .formBox{
       margin-top: 0px;
       padding: 50px;  
   }
-  inputBox{
+  .inputBox{
       position: relative;
       box-sizing: border-box;
       margin-bottom: 40px;
@@ -1027,27 +1028,28 @@ section {
       padding: 0 0 10px 0;
       margin-top: 10px;
       text-align: center;
+      li{
+        display: inline-block;
+        list-style: none;
+        padding: 0.1rem;
+        margin: 0 0.2rem;  
+        a {
+            color: $black;
+            width: 40px;
+            height: 40px;
+            background: $lightgreywhite;
+            text-align: center;
+            line-height: 40px;
+            font-size: 30px;
+            display: block;
+            border-radius: 50%;
+            position:relative;
+            overflow: hidden;
+            border: 3px solid $lightgreywhite;
+        }
+     }
   }
-  ul.social li{
-      display: inline-block;
-      list-style: none;
-      padding: 0.1rem;
-      margin: 0 0.2rem;  
-  }
-  ul.social li a {
-      color: $black;
-      width: 40px;
-      height: 40px;
-      background: $lightgreywhite;
-      text-align: center;
-      line-height: 40px;
-      font-size: 30px;
-      display: block;
-      border-radius: 50%;
-      position:relative;
-      overflow: hidden;
-      border: 3px solid $lightgreywhite;
-  }
+
   ul li a .fa{
       position: relative;
       color: $ul_link;
@@ -1056,14 +1058,12 @@ section {
   ul.social li:nth-child(1) a:hover{
       color:  $fb_color;
       border-color: transparent;
-      opacity: 0.7;
-      
+      opacity: 0.7;  
   }
   ul.social li:nth-child(2) a:hover{
       color:  $li_color;
       border-color: transparent;
-       opacity: 0.7;
-      
+       opacity: 0.7; 
   }
   ul.social li:nth-child(3) a:hover{
       color:  $black;
