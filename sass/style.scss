@@ -275,6 +275,9 @@ section {
   .btn-home {
       color: $greywhite;
       border: 1px solid $greywhite;
+      i{
+        margin-left:5px;
+     }
   }
   .btn-home:hover,
   .btn-home:focus {
@@ -282,9 +285,7 @@ section {
       background-color: $orange;
       border: 1px solid $orange;
   }
-  .btn-home i{
-      margin-left:5px;
-  }
+ 
   /*====================================================
   |||||Arrow down|||||
   ====================================================*/
@@ -337,10 +338,10 @@ section {
       font-size: 42px;
       font-weight: 100;
       line-height: 50px;
-  }
-  .vertical-heading h2 strong {
-      color: $orange;
-      font-weight: bold;
+      strong {
+        color: $orange;
+        font-weight: bold;
+     }
   }
   /*====================================================
   |||||About 01|||||
@@ -367,11 +368,11 @@ section {
   }
   #about-bottom {
       margin-top: 60px;
-  }
-  #about-bottom img {
-      margin: 0 auto;
-      width: 1024px;
-      display: block;
+      img {
+        margin: 0 auto;
+        width: 1024px;
+        display: block;
+     }
   }
   /*====================================================
   |||||About 02|||||
@@ -384,45 +385,41 @@ section {
       padding: 80px 30px;
       -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .1);
       box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-  }
-  .about-item i {
-      font-size: 42px;
-      margin: 0;
-  }
-  .about-item h3 {
-      font-size: 24px;
-      margin-bottom: 10px;
-  }
-  .about-item hr {
-      width: 45px;
-      height: 3px;
-      background-color: $orange;
-      margin: 0 auto;
-      border: none;
-  }
-  .about-item p {
-      margin-top: 20px;
-      font-size: 1rem;
-  }
+      i {
+        font-size: 42px;
+        margin: 0;
+     }
+     h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    hr {
+        width: 45px;
+        height: 3px;
+        background-color: $orange;
+        margin: 0 auto;
+        border: none;
+    }
+    p {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+  } 
   /* Hover State*/
   .about-item:hover {
       background-color: $orange;
-  }
-  
-  .about-item:hover i,
+      i,
   .about-item:hover h3,
   .about-item:hover p {
       color: $greywhite;
+    }
+    hr {
+        background-color: $greywhite;
+    }
+    i {
+        transform: translateY(-20px);
+    }
   }
-  
-  .about-item:hover hr {
-      background-color: $greywhite;
-  }
-  
-  .about-item:hover i {
-      transform: translateY(-20px);
-  }
-  
   #about-bottom img {
       margin: 0 auto;
       width: 1024px;
@@ -433,7 +430,6 @@ section {
      
   }
   /*Smooth Transition */
-  
   .about-item,
   .about-item i,
   about-item hr {
@@ -445,21 +441,24 @@ section {
   ====================================================*/
   .box1{
       margin-top: 20px;
-  }
-  .box1 h3{
-      text-align: center;
-      text-transform: capitalize;
-      font-family: $font-family_Noto;
-  }
-  .box1 p{
-      font-family: $font-family_Noto;
-      text-align: justify;
+      h3{
+        text-align: center;
+        text-transform: capitalize;
+        font-family: $font-family_Noto;
+     }
+     p{
+        font-family: $font-family_Noto;
+        text-align: justify;
+    }
   }
   .card{
     width:100%;
     height:467px;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    .img-box{
+        transform: translateY(-150px);
+    }
   }
   .img-box{
       position: absolute;
@@ -470,13 +469,10 @@ section {
       transition:0.5s;
       z-index: 2;
       background: $black;
-  }
-  .card .img-box{
-      transform: translateY(-150px);
-  }
-  .img-box img{
-      width: 100%;
-      transition: 0.5s;  
+      img{
+        width: 100%;
+        transition: 0.5s;  
+     }
   }
   .social-icon{
       position: absolute;
@@ -487,39 +483,39 @@ section {
       display:flex;
       margin: 0;
       padding:0;
-  }
-  .social-icon li{
-      list-style: none;
-  }
-  .social-icon li a{
-      color:$black;
-      width: 40px;
-      height: 40px;
-      background: $lightgreywhite;
-      margin: 0 5px;
-      text-align: center;
-      font-size: 30px;
-      display: block;
-      border-radius: 50%;
-      position:relative;
-      overflow: hidden;
-      border: 3px solid $lightgreywhite;
-      transition: 0.5s;
-      transform:translateY(250px);
-      opacity: 0;
+      li{
+        list-style: none;
+        a{
+            color:$black;
+            width: 40px;
+            height: 40px;
+            background: $lightgreywhite;
+            margin: 0 5px;
+            text-align: center;
+            font-size: 30px;
+            display: block;
+            border-radius: 50%;
+            position:relative;
+            overflow: hidden;
+            border: 3px solid $lightgreywhite;
+            transition: 0.5s;
+            transform:translateY(250px);
+            opacity: 0;
+        }
+      }
   }
   .card:hover .social-icon li a{
       transform:translateY(0px);
       opacity: 1;
-  }
-  .card .social-icon li a .fa{
-      transition:0.5s;
-      font-size:24px;
-      line-height: 50px;
-  }
-  .card .social-icon li a:hover .fa{
-      transform: rotateY(360deg);
-      opacity: 1;
+      .fa{
+        transition:0.5s;
+        font-size:24px;
+        line-height: 50px;
+    }
+    a:hover .fa{
+        transform: rotateY(360deg);
+        opacity: 1;
+    }
   }
   .card:hover .social-icon li:nth-child(1) a{
       transition-delay: 0s;   
@@ -574,22 +570,21 @@ section {
       background:$white;
       box-sizing: border-box;
       z-index: 1;
-  }
-  .details h2{
-      margin: 10px 0 0 ;
-      text-align: center;
-      padding: 0;
-  }
-  .details h2 span{
-      color: $grey;
-      font-size: 16px;
-  }
-  .details p{
-       font-family: $font-family_Noto;
-      font-size:18px;
-      text-align: center;
-  }
-  
+      h2{
+        margin: 10px 0 0 ;
+        text-align: center;
+        padding: 0;
+        span{
+            color: $grey;
+            font-size: 16px;
+        }
+     }
+     p{
+        font-family: $font-family_Noto;
+       font-size:18px;
+       text-align: center;
+    }
+  } 
   /*====================================================
   ||||| Skills|||||
   ====================================================*/
@@ -597,15 +592,15 @@ section {
      background-color: $lightgreywhite;
       -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .1);
       box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-  }
-  #skills .about-right p{
-     font-family: $font-family_Noto; 
-  }
-  
+      -webkit-transition: all 400ms ease-in-out;
+      transition: all 400ms ease-in-out;
+      .about-right p{
+        font-family: $font-family_Noto; 
+      }
+  } 
   #skill-left .vertical-heading{
       min-height: 160px;
   }
-  
   .skill{
       margin: 8px;
       position: relative;
@@ -620,18 +615,18 @@ section {
       height: 100%;
       -webkit-transition: all 300ms linear; transition: all 300ms linear; 
   }
-  .skill-info h6{
-      color:$orange;
-      font-size: 16px;
-      margin:0;
-  }
-  .skill-info p{
-      color: $greywhite;
-  }
   .skill-info {
       width: 100%;
       height: 100%;
       padding: 80px 0px;
+      h6{
+        color:$orange;
+        font-size: 16px;
+        margin:0;
+     }
+     p{
+        color: $greywhite;
+     }
   }
   .skill:hover .skill-overlay{
       opacity: 1;
@@ -639,29 +634,28 @@ section {
   #skills:hover {
       background-color: $orange;
   }
-  #skills {
-      -webkit-transition: all 400ms ease-in-out;
-      transition: all 400ms ease-in-out;
-  }
   /*====================================================
   ||||| Skill Progress bar|||||
   ====================================================*/	
   .skillbar {
       background-color: $greywhite;
       margin: 10px 0px;
+      h3 {
+        font-size: 24px;
+        margin-top: 5px;
+    }
   }
   .skillheader i {
       font-size: 42px;
       margin: 0;
   }
-  .skillbar h3 {
-      font-size: 24px;
-      margin-top: 5px;
-  }
   .main {
           margin: 50px auto;
           width: 90%;
-      }
+          i{
+            font-size: 1rem;
+        }
+ }
   
   .progressBar {
           position: relative;
@@ -673,9 +667,6 @@ section {
           box-shadow: 0 1px 2px #222;
           z-index: 1;
       }
-  .main i{
-      font-size: 1rem;
-  }
   
       .title {
           position: absolute;
@@ -821,19 +812,18 @@ section {
     overflow: hidden;
     display: block;
     margin-bottom: 30px;
-  }
-  
-  .portfolio-item h4 {
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: $greywhite;
-  }
-  .portfolio-item span{
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 100;
+    h4 {
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: $greywhite;
+      }
+    span{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 100;
+      }
   }
   .hover-bg {
     position: absolute;
@@ -846,7 +836,7 @@ section {
      -o-transition: all 0.5s;
     transition: all 0.5s;
   }
-  
+
   .hover-txt {
     padding: 30px 30px 40px 30px;
     position: absolute;
@@ -867,13 +857,13 @@ section {
   
   .portfolio-item:hover .hover-bg{
     opacity: 0.9;
-  }
-  .portfolio-item:hover .hover-bg .hover-txt{
-    -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-          -ms-transform: translateY(0);
-            -o-transform: translateY(0);
-              transform: translateY(0);
+    .hover-txt{
+        -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+              -ms-transform: translateY(0);
+                -o-transform: translateY(0);
+                  transform: translateY(0);
+    }
   }
   /* Layout
   ====================*/
@@ -882,20 +872,21 @@ section {
       background-color: $white;
       color:$greywhite;
   }
-  
   /* Index Style - Box Portfolio */
   .layout .portfolio-item{
     margin: 0;
-  }
-  .layout .portfolio-item i{
-    font-size: 60px;
+    i{
+        font-size: 60px;
+    }
   }
   .layout .hover-txt{ 
     text-align: center;
     padding: 25% 0;
     position: inherit;
   }
-  .layout .hover-bg{ padding: 20px;}
+  .layout .hover-bg{ 
+      padding: 20px;
+    }
   .border {
       border: 4px solid $greywhite;
       display: block;
@@ -931,26 +922,27 @@ section {
   #contact{
         background-color: $lightgreywhite;
         padding: 50px 0px 10px 0px;
+        h2{
+            margin-top: 20px;
+            text-align: center;
+            font-size: 2rem;
+            strong{
+                color: $orange;
+                font-weight: bold;
+            }
+         }
+         p{
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: $font-family_Noto;
+        }
   }
-  #contact h2{
-     margin-top: 20px;
-     text-align: center;
-     font-size: 2rem;
-  }
-  #contact p{
-      text-align: center;
-      font-size: 1.5rem;
-      font-family: $font-family_Noto;
-  }
-  #contact h2 strong{
-      color: $orange;
-      font-weight: bold;
-  }
+  
   .formBox{
       margin-top: 0px;
       padding: 50px;  
   }
-  inputBox{
+  .inputBox{
       position: relative;
       box-sizing: border-box;
       margin-bottom: 40px;
@@ -1036,27 +1028,28 @@ section {
       padding: 0 0 10px 0;
       margin-top: 10px;
       text-align: center;
+      li{
+        display: inline-block;
+        list-style: none;
+        padding: 0.1rem;
+        margin: 0 0.2rem;  
+        a {
+            color: $black;
+            width: 40px;
+            height: 40px;
+            background: $lightgreywhite;
+            text-align: center;
+            line-height: 40px;
+            font-size: 30px;
+            display: block;
+            border-radius: 50%;
+            position:relative;
+            overflow: hidden;
+            border: 3px solid $lightgreywhite;
+        }
+     }
   }
-  ul.social li{
-      display: inline-block;
-      list-style: none;
-      padding: 0.1rem;
-      margin: 0 0.2rem;  
-  }
-  ul.social li a {
-      color: $black;
-      width: 40px;
-      height: 40px;
-      background: $lightgreywhite;
-      text-align: center;
-      line-height: 40px;
-      font-size: 30px;
-      display: block;
-      border-radius: 50%;
-      position:relative;
-      overflow: hidden;
-      border: 3px solid $lightgreywhite;
-  }
+
   ul li a .fa{
       position: relative;
       color: $ul_link;
@@ -1065,14 +1058,12 @@ section {
   ul.social li:nth-child(1) a:hover{
       color:  $fb_color;
       border-color: transparent;
-      opacity: 0.7;
-      
+      opacity: 0.7;  
   }
   ul.social li:nth-child(2) a:hover{
       color:  $li_color;
       border-color: transparent;
-       opacity: 0.7;
-      
+       opacity: 0.7; 
   }
   ul.social li:nth-child(3) a:hover{
       color:  $black;
