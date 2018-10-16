@@ -1,0 +1,37 @@
+/*====================================================
+||||||HTML and Body |||||
+====================================================*/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    color: $black;
+    background-color:$greywhite; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: $font-family_Noto;
+}
+
+p {
+    font-family: $font-family_Yantramanav;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+section {
+    background: $greywhite;
+    overflow: hidden;
+}
+.nopadding { padding: 0 ;}
+
+.nomargin { margin: 0 ;}

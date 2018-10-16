@@ -1,0 +1,24 @@
+/*====================================================
+||||||Mixin |||||
+====================================================*/
+@mixin transition($value){
+    -webkit-transition: all $value;
+    -moz-transition: all $value;
+    -o-transition: all $value;
+   transition: all $value;
+}
+@mixin translateY($value){
+    -webkit-transform: translateY($value);
+    -moz-transform: translateY($value);
+      -ms-transform: translateY($value);
+        -o-transform: translateY($value);
+          transform: translateY($value);
+}
+@mixin transparent(){
+    border-color: transparent;
+    opacity: 0.7;
+}
+@mixin boxshadow(){
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}

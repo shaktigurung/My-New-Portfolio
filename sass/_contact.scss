@@ -1,0 +1,162 @@
+  /*====================================================
+  |||||Contact|||||
+  ====================================================*/
+  #contact{
+    background-color: $lightgreywhite;
+    padding: 50px 0px 10px 0px;
+    h2{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 2rem;
+        strong{
+            color: $orange;
+            font-weight: bold;
+        }
+     }
+     p{
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: $font-family_Noto;
+    }
+}
+
+.formBox{
+  margin-top: 0px;
+  padding: 50px;  
+}
+.inputBox{
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+.input{
+  position:relative;
+  width: 100%;
+  height:50px;
+  background: transparent;
+  border:none;
+  outline:none;
+  font-size: 1rem;
+  border-bottom: 2px solid $orange;
+  opacity: 0.7;
+}
+.inputText{
+  position:absolute;
+  line-height:50px;
+  font-size: 1rem;
+  transition:.5s;
+  opacity: 0.5;
+}
+textarea{
+  height: 100px !important;
+  margin-top: 15px;  
+}
+.focus .inputText{
+  @include translateY(-15px);
+  font-size: 1rem;
+  opacity: 1;
+  color:$orange;
+}
+.button{
+  width: 100%;
+  background:$orange;
+  color:$lightgreywhite;
+  border: none;
+  outline:none;
+  height:50px;
+  font-size: 1rem;
+}
+.successbutton{
+  font-family: $font-family_Dancing;
+  border-radius: 28px;
+  @include transition(0.5s);
+  z-index:1;
+  width:200px;
+  height: 100px;
+  justify-content: center;
+  background:$overlayblue;
+  color:$lightgreywhite;
+  border: none;
+  outline:none;
+  height:50px;
+  font-size: 1rem;
+}
+button{
+ margin:auto;
+display:block;
+  
+}
+.successbutton a{
+  color:$lightgreywhite;
+  list-style: none;
+  text-decoration: none;    
+}
+.successbutton:hover,
+.successbutton:focus {
+  color: $white;
+  background-color: $orange;
+  border: 1px solid $orange;
+}
+
+/*====================================================
+|||||Copyright|||||
+====================================================*/
+.copyright{
+  text-align: center;
+}
+ul.social{
+  padding: 0 0 10px 0;
+  margin-top: 10px;
+  text-align: center;
+  li{
+    display: inline-block;
+    list-style: none;
+    padding: 0.1rem;
+    margin: 0 0.2rem;  
+    a {
+        color: $black;
+        width: 40px;
+        height: 40px;
+        background: $lightgreywhite;
+        text-align: center;
+        line-height: 40px;
+        font-size: 30px;
+        display: block;
+        border-radius: 50%;
+        position:relative;
+        overflow: hidden;
+        border: 3px solid $lightgreywhite;
+    }
+ }
+}
+
+ul li a .fa{
+  position: relative;
+  color: $ul_link;
+  transition: .5s;
+}
+ul.social li:nth-child(1) a:hover{
+  color:  $fb_color;
+  border-color: transparent;
+  opacity: 0.7;  
+}
+ul.social li:nth-child(2) a:hover{
+  color:  $li_color;
+  border-color: transparent;
+   opacity: 0.7; 
+}
+ul.social li:nth-child(3) a:hover{
+  color:  $black;
+  border-color: transparent; 
+  opacity: 0.7;
+}
+ul.social li:nth-child(4) a:hover{
+  color: $black;
+  border-color: transparent;  
+   opacity: 0.7;
+}
+ul.social li:nth-child(5) a:hover{
+ color:  $google_color;
+  border-color: transparent;  
+   opacity: 0.7;
+}
