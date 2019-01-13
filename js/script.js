@@ -47,14 +47,19 @@ function skillbar(){
 $(document).ready(function(){
         		$('.html').animate({width:'90%'},2000);
         		$('.css').animate({width:'80%'},2000);
-        		$('.js').animate({width:'70%'},2000);
+                $('.js').animate({width:'70%'},2000);
+                $('.react').animate({width:'80%'},2000);
+                $('.redux').animate({width:'75%'},2000);
         		$('.php').animate({width:'75%'},2000);
                 $('.jquery').animate({width:'70%'},2000);
-                $('.sass').animate({width:'60%'},2000);
+                $('.sass').animate({width:'80%'},2000);
                 $('.mysql').animate({width:'60%'},2000);
+                $('.rails').animate({width:'60%'},2000);
+                $('.mongodb').animate({width:'65%'},2000);
                 $('.ruby').animate({width:'50%'},2000);
                 $('.bootstrap').animate({width:'85%'},2000);
                 $('.drupal').animate({width:'80%'},2000);
+                $('.express').animate({width:'80%'},2000);
                 $('.wordpress').animate({width:'75%'},2000);
                 $('.git').animate({width:'80%'},2000);
                 $('.github').animate({width:'80%'},2000);

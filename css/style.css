@@ -658,6 +658,10 @@ about-item hr {
   border-bottom-left-radius: 5px;
   box-shadow: 2px 0 2px #333;
   text-shadow: 1px 1px 1px #000; }
+  .title img {
+    width: 20px;
+    height: 15px;
+    background-color: white; }
 
 .progress_value {
   position: relative;
@@ -713,6 +717,24 @@ about-item hr {
 .githubColor {
   background: #161614; }
 
+.reactColor {
+  background: #02ceef; }
+
+.reduxColor {
+  background: #764abb; }
+
+.expressColor {
+  background: #B9B9B9; }
+
+.railsColor {
+  background: #cd362c; }
+
+.mongodbColor {
+  background: #3B7A48; }
+
+.nodeColor {
+  background: black; }
+
 /**** Bar Colors****/
 .html {
   background: #F16528; }
@@ -752,6 +774,24 @@ about-item hr {
 
 .github {
   background: #161614; }
+
+.node {
+  background: #161614; }
+
+.express {
+  background: #B9B9B9; }
+
+.react {
+  background: #02ceef; }
+
+.redux {
+  background: #764abb; }
+
+.rails {
+  background: #cd362c; }
+
+.mongodb {
+  background: #3B7A48; }
 
 /*====================================================
 |||||Portfolio|||||
