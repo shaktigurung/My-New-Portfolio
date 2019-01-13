@@ -812,13 +812,14 @@ about-item hr {
   .portfolio-item h4 {
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 4rem;
     letter-spacing: 1px;
     color: #B5A992; }
   .portfolio-item span {
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 100; }
+    font-weight: 100;
+    font-size: 2rem; }
 
 .hover-bg {
   position: absolute;
