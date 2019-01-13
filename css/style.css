@@ -812,19 +812,19 @@ about-item hr {
   .portfolio-item h4 {
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 1rem;
     letter-spacing: 1px;
     color: #B5A992; }
   .portfolio-item span {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 100;
-    font-size: 2rem; }
+    font-size: 0.5rem; }
   .portfolio-item p {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 100;
-    font-size: 1rem; }
+    font-size: 0.5rem; }
 
 .hover-bg {
   position: absolute;
@@ -1102,7 +1102,24 @@ ul.social li:nth-child(5) a:hover {
     transform: none; }
 
   .card:hover .img-box {
-    transform: translateY(-160px); } }
+    transform: translateY(-160px); }
+
+  .portfolio-item h4 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    color: #B5A992; }
+  .portfolio-item span {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 2rem; }
+  .portfolio-item p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 2rem; } }
 @media (min-width: 382px) {
   .card {
     margin-top: 160px; } }
