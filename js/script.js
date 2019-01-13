@@ -60,6 +60,7 @@ $(document).ready(function(){
                 $('.bootstrap').animate({width:'85%'},2000);
                 $('.drupal').animate({width:'80%'},2000);
                 $('.express').animate({width:'80%'},2000);
+                $('.node').animate({width:'80%'},2000);
                 $('.wordpress').animate({width:'75%'},2000);
                 $('.git').animate({width:'80%'},2000);
                 $('.github').animate({width:'80%'},2000);
