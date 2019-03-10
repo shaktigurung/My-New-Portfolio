@@ -11,7 +11,7 @@ $(window).on('load', function () {
 |||||Typejs|||||
 =============================================*/
 var options = {
-    strings: [ "A Front End Web Developer based in Sydney, Australia ", " I am an enthusiastic Front End Web Developer learning to be a Full Stack Developer.", " Please scroll below to know more about me. Thank you "],
+    strings: [ "A Aspiring Full Stack Web Developer based in Sydney, Australia ", " Highly passionate about developing Web Applications with MERN(Mongodb, Express.js, React.js and Node.js) stack. "],
     typeSpeed:40, 
     backSpeed:40,
     startDelay: 6000,
