@@ -143,7 +143,6 @@ section {
   width: 100%;
   position: fixed;
   overflow: hidden;
-  height: 63px;
   z-index: 99; }
 
 .logo img {
