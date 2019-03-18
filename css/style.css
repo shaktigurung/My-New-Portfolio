@@ -1122,6 +1122,22 @@ ul.social li:nth-child(5) a:hover {
 @media (min-width: 382px) {
   .card {
     margin-top: 160px; } }
+#thankyou {
+  margin-top: 180px;
+  background-color: #B3AA99;
+  padding: 50px 0px 10px 0px; }
+  #thankyou h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2rem; }
+    #thankyou h2 strong {
+      color: #B55E3A;
+      font-weight: bold; }
+  #thankyou p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Noto Serif", serif; }
+
 /*====================================================
   |||||StyleSheet Ends|||||
 ====================================================*/
