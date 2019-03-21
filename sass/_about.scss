@@ -218,34 +218,19 @@ about-item hr {
 .card:hover .social-icon li:nth-child(3) a{
     transition-delay: 0.4s; 
 }
-.card:hover .social-icon li:nth-child(4) a{
-    transition-delay: 0.6s;
-     
-}
-.card:hover .social-icon li:nth-child(5) a{
-    transition-delay: 0.8s;
-}
 
 /* Hover Effect on Social Icon */
 .social-icon li:nth-child(1):hover a{
-    color:  $fb_color;
+    color:  $li_color;
     @include transparent();
 }
 .social-icon li:nth-child(2):hover a{
-    color:  $li_color;
+    color: $black;
     @include transparent();
 }
 .social-icon li:nth-child(3):hover a{
      color:$black;
      @include transparent();
-}
-.social-icon li:nth-child(4):hover a{
-    color: $black;
-    @include transparent();
-}
-.social-icon li:nth-child(5):hover a{
-    color: $google_color;
-    @include transparent();
 }
 
 /* Profile Details */

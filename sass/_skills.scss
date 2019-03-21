@@ -277,14 +277,14 @@
        color: $greywhite;
      }
    span{
-       text-transform: uppercase;
+       text-transform: capitalize;
        letter-spacing: 2px;
        font-weight: 100;
        font-size: 1rem;
        color: $orange;
      }
     p{
-        text-transform: uppercase;
+        text-transform: capitalize;
         letter-spacing: 2px;
         font-weight: 100;
         font-size: 1rem;
