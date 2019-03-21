@@ -809,21 +809,23 @@ about-item hr {
   display: block;
   margin-bottom: 30px; }
   .portfolio-item h4 {
-    font-weight: 900;
+    margin-top: -40px;
+    font-weight: 400;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 2rem;
     letter-spacing: 1px;
     color: #B5A992; }
   .portfolio-item span {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 100;
-    font-size: 0.5rem; }
+    font-size: 1rem;
+    color: #B55E3A; }
   .portfolio-item p {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 100;
-    font-size: 0.5rem; }
+    font-size: 1rem; }
 
 .hover-bg {
   position: absolute;
@@ -1084,6 +1086,23 @@ ul.social li:nth-child(5) a:hover {
   .open-slide {
     display: none; } }
 @media (min-width: 768px) {
+  .portfolio-item h4 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: #B5A992; }
+  .portfolio-item span {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 1rem; }
+  .portfolio-item p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 1rem; } }
+@media (min-width: 768px) {
   .img-box img {
     position: absolute;
     top: 0;
@@ -1101,24 +1120,7 @@ ul.social li:nth-child(5) a:hover {
     transform: none; }
 
   .card:hover .img-box {
-    transform: translateY(-160px); }
-
-  .portfolio-item h4 {
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 4rem;
-    letter-spacing: 1px;
-    color: #B5A992; }
-  .portfolio-item span {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 100;
-    font-size: 2rem; }
-  .portfolio-item p {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 100;
-    font-size: 2rem; } }
+    transform: translateY(-160px); } }
 @media (min-width: 382px) {
   .card {
     margin-top: 160px; } }
