@@ -62,6 +62,8 @@ $(document).ready(function(){
                 $('.express').animate({width:'80%'},2000);
                 $('.node').animate({width:'80%'},2000);
                 $('.wordpress').animate({width:'75%'},2000);
+                $('.graphql').animate({width:'80%'},2000);
+                $('.typeScript').animate({width:'75%'},2000);
                 $('.git').animate({width:'80%'},2000);
                 $('.github').animate({width:'80%'},2000);
         	});

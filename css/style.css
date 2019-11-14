@@ -718,6 +718,12 @@ about-item hr {
 .nodeColor {
   background: #75AC64; }
 
+.typeScriptColor {
+  background: #284E80; }
+
+.graphqlColor {
+  background: #E24998; }
+
 /**** Bar Colors****/
 .html {
   background: #F16528; }
@@ -775,6 +781,12 @@ about-item hr {
 
 .mongodb {
   background: #3B7A48; }
+
+.typeScript {
+  background: #284E80; }
+
+.graphql {
+  background: #E24998; }
 
 /*====================================================
 |||||Portfolio|||||
