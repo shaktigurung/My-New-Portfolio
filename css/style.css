@@ -792,7 +792,9 @@ about-item hr {
 |||||Portfolio|||||
 ====================================================*/
 #portfolio img {
-  margin: 10px 0px 10px 0px; }
+  margin: 10px 0px 10px 0px; 
+  height: 230px;
+}
 
 .content-area {
   padding-top: 4px; }
