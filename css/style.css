@@ -793,7 +793,8 @@ about-item hr {
 ====================================================*/
 #portfolio img {
   margin: 10px 0px 10px 0px; 
-  height: 230px;
+  min-height: 230px;
+  min-width: 350px;
 }
 
 .content-area {
